@@ -5,11 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>page2</title>
 </head>
 <body>
+    <header>
+        <nav id="navbar">
+          <div class="navbar_top">
+            <span id="hamburger" onclick="toggleNavbar()"> &#9776; </span>
+            <a href="">
+              <h1>PortWala</h1>
+            </a>
+            <button>Login/Signup</button>
+          </div>
+          <div class="navbar_bottom" id="navbar_bottom">
+            <div class="dropdown">
+              <span class="dropdown_button" onclick="toggleMenu(1)">
+                Products &nbsp; <i class="fa fa-angle-down"></i>
+              </span>
+              <ul class="dropdown_content" id="menu_1">
+                <li>
+                  <a href=""> Freight Rates </a>
+                </li>
+                <li>
+                  <a href=""> Shipping Containers </a>
+                </li>
+                <li>
+                  <a href=""> Air Shipments </a>
+                </li>
+                <li>
+                  <a href=""> Track Containers </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <span class="dropdown_button" onclick="toggleMenu(2)">
+                Services &nbsp; <i class="fa fa-angle-down"></i>
+              </span>
+              <ul class="dropdown_content" id="menu_2">
+                <li>
+                  <a href=""> FCL Freight </a>
+                </li>
+                <li>
+                  <a href=""> LCL Freight </a>
+                </li>
+                <li>
+                  <a href=""> Air Cargo </a>
+                </li>
+                <li>
+                  <a href=""> Trucking </a>
+                </li>
+                <li>
+                  <a href=""> Haulage </a>
+                </li>
+                <li>
+                  <a href=""> Customs Clearance </a>
+                </li>
+              </ul>
+            </div>
+            <a href=""> Partner Program </a>
+            <a href=""> Logistics </a>
+          </div>
+        </nav>
+      </header>
+      <div id="overlay" onclick=toggleNavbar()></div>
     <section id="section_1">
         <div id="container_1">
             <h1>Booking Shipping Containers has never been easier</h1>
@@ -25,5 +88,161 @@
             </ul>
         </div>
     </section>
+
+    <section id="section_2">
+        <div>
+            <h1>Book shipping containers in minutes</h1>
+        <p>
+            Enter origin port, destination port, 
+            some additional details of your cargo 
+            and book shipping containers online.
+        </p>
+            <a href="#form">
+                <i class="far fa-play-circle"></i> Signup & Search Rates
+            </a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+          <a href="">
+            <h1>PortWala</h1>
+          </a>
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="footer_links">
+          <ul>
+            <li class="footer_title">Products</li>
+            <li>
+              <a href=""> Freight Charges </a>
+            </li>
+            <li>
+              <a href=""> Book shipping Containers </a>
+            </li>
+            <li>
+              <a href=""> Book Air Shipments </a>
+            </li>
+            <li>
+              <a href=""> Track Containers </a>
+            </li>
+            <li>
+              <a href="">Shipping Schedule</a>
+            </li>
+            <li>
+              <a href=""> Shipping Documents </a>
+            </li>
+            <li>
+              <a href=""> Send Quotations </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="footer_title">Learn</li>
+            <li>
+              <a href="">Events & Webinars</a>
+            </li>
+            <li>
+              <a href="">Help Center</a>
+            </li>
+            <li>
+              <a href="">Shipping Terms</a>
+            </li>
+            <li>
+              <a href="">Incoterms</a>
+            </li>
+            <li>
+              <a href="">Port Information</a>
+            </li>
+            <li>
+              <a href="">Reports</a>
+            </li>
+            <li>
+              <a href="">Import/Export Industry</a>
+            </li>
+            <li>
+              <a href="">World Container Index</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="footer_title">Company</li>
+            <li>
+              <a href="">Customer References</a>
+            </li>
+            <li>
+              <a href="">About Us</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+            <li>
+              <a href="">Press & Media</a>
+            </li>
+            <li>
+              <a href="">Logistics</a>
+            </li>
+            <li>
+              <a href="">Partner Program</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="footer_title">Services</li>
+            <li>
+              <a href="">FCL Freight</a>
+            </li>
+            <li>
+              <a href="">LCL Frieght</a>
+            </li>
+            <li>
+              <a href="">Air Cargo</a>
+            </li>
+            <li>
+              <a href="">Trucking</a>
+            </li>
+            <li>
+              <a href="">Haulage</a>
+            </li>
+            <li>
+              <a href="">Customs Clearance</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copy">
+          <ul>
+            <li>
+              <a href="">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="">Privacy</a>
+            </li>
+            <li>
+              <a href="">Cookies</a>
+            </li>
+          </ul>
+          <p>
+            &copy; PortWala Pvt. Ltd. All right reserved.
+          </p>
+        </div>
+      </footer>
 </body>
+<script src="./js/navbar.js"></script>
 </html>

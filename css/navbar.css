@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+#navbar {
+  width: 100%;
+  background: linear-gradient(to right, #e1f5fe, #eceff1);
+  box-shadow: -1px -1px 10px #cfd8dc;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar_top {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_top h1,
+.navbar_top span,
+.navbar_top button {
+  margin-top: 1%;
+}
+
+
+.navbar_top h1,.footer h1{
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.navbar_top button {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+}
+
+.navbar_bottom {
+  width: 60%;
+  height: 0.6rem;
+  margin: 1% 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background: #eceff1;
+  width: 10rem;
+  list-style: none;
+  left: -3rem;
+}
+
+.dropdown_content li {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* .dropdown_content li:hover {
+  background-color: #bebebe;
+} */
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed; 
+  display: none;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1; 
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar_bottom {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar_top button {
+    font-size: 0.7rem;
+  }
+
+  .navbar_top h1,.footer h1{
+      font-size: 1.5rem;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .navbar_top {
+    height: 2.5rem;
+  }
+
+  .navbar_bottom {
+    display: none;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .dropdown {
+    position: static;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dropdown_button {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .dropdown_content {
+    position: static;
+    background: inherit;
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdown_content {
+    display: none;
+  }
+}
