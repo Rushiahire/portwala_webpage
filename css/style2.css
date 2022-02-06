@@ -9,6 +9,7 @@
     background:linear-gradient(rgba(199, 181, 181, 0.233),rgba(104, 173, 230, 0.329)), url(../images/page2.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 5%;
     height: 630px;
     /* clip-path: ellipse(87% 100% at 50.37% 0%); */
 }
