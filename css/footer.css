@@ -105,9 +105,7 @@
     .copy{
         padding: 1% 0;
     }
-
 }
-
 
 @media  screen and (max-width:500px) {
     .social{
@@ -117,6 +115,5 @@
         text-align: center;
         row-gap: 0.4rem;
     }
-
 }
 
