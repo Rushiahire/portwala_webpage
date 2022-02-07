@@ -78,7 +78,7 @@
 }
 
 #section_3_div1 , #section_3_div3 {
-    background-color: rgb(185, 233, 253);
+    background:linear-gradient(to right ,#a7def8,#f1f6f8);
     box-shadow: 10px 10px 10px gray;
     border-radius: 15px;
 }
@@ -121,7 +121,6 @@
     background-color: cornflowerblue;
     border: none;
     color: whitesmoke;
-    
     width: 60%;
     margin: 0 auto;
     font-size: 1.5rem;
@@ -156,10 +155,11 @@
 
 #section_4 {
     background: linear-gradient(to right, rgba(119, 200, 233, 0.959),rgba(255, 255, 255, 0.603)),url(../images/member.svg);
-    box-shadow: 10px 10px 50px #e1aaeb;
+    box-shadow: 10px 10px 50px rgb(85, 145, 153);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
-    width: 70%;
+    width: 65%;
     margin: 5% auto;
     border-radius: 15px;
 }
@@ -178,5 +178,67 @@
 
 #section_4 p {
     font-size: 1.5rem;
+    margin: 4% 0;
 }
 
+#section_4 a {
+    background-color: rgb(46, 117, 248);
+    width: 50%;   
+}
+
+@media screen and (max-width:1050px) {
+    #section_4 {
+        background-size: contain;
+        height: auto;
+    }
+
+    #section_4 a {
+        width: 75%;
+        
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    #section_4 {
+        width: 80%;
+    }
+
+    #section_4 a {
+        width: 65%;
+    }
+
+    #section_4 div {
+        width: 93%;
+    }
+
+    #section_4 h1 {
+        font-size: 2.3rem;
+    }
+
+    #section_4 p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #section_4 {
+        width: 90%;
+        height: 350px;
+    }
+
+    #section_4 p {
+        font-size: 1rem;
+    }
+
+    #section_4 a {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #section_4 div {
+        width: 100%;
+        padding: 17% 4%;
+    }
+}
