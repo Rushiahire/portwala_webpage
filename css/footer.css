@@ -1,5 +1,6 @@
 .footer{
-    margin: 10rem auto 0 auto;
+    margin: 5rem auto 0 auto;
+    padding: 5% 0;
     background: url(../images/wave3.svg);
     background-size: cover;
     background-position: center;
@@ -89,6 +90,7 @@
         background:linear-gradient(to top,#81D4FA,#B3E5FC,#E1F5FE);
         background-repeat: no-repeat;
         background-size: contain;
+        margin-top: 2rem;
     }
 
     .footer_links{
