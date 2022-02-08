@@ -149,7 +149,7 @@
     font-size: 1rem;
 }
 
-#section_3 a ,#section_4 a {
+#section_3 button ,#section_4 button {
     text-decoration: none;
     text-align: center;
     background-color: cornflowerblue;
@@ -188,7 +188,7 @@
 
 @media screen and (max-width: 500px) {
 
-    #section_3 a {
+    #section_3 button {
         width: 90%;
     }    
 }

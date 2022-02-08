@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -97,9 +98,9 @@
             some additional details of your cargo 
             and book shipping containers online.
         </p>
-            <a href="#form">
-                <i class="far fa-play-circle"></i> Signup & Search Rates
-            </a>
+        <button onclick=setFormStatus()>
+          <i class="far fa-play-circle"></i> Signup & Search freight charges
+        </button>
         </div>
 
     </section>
@@ -113,9 +114,9 @@
             handling charges, free days. 
             No more surprises with container prices!
           </p>
-          <a href="#form">
-            <i class="far fa-play-circle"></i> Signup & book shipping containers
-        </a>
+          <button onclick=setFormStatus()>
+            <i class="far fa-play-circle"></i> Signup & Search freight charges
+          </button>
         </div>
         <img src="./images/booked.svg" alt="image">
       </div>
@@ -141,13 +142,42 @@
             Choose containers based on commodity or refrigeration requirements.
              Select your options, search and book online!
           </p>
-          <a href="#form">
-            <i class="far fa-play-circle"></i> Signup & book shipping containers 
-        </a>
+          <button onclick=setFormStatus()>
+            <i class="far fa-play-circle"></i> Signup & Search freight charges
+          </button>
         </div>
         <img src="./images/container.svg" alt="image">
       </div>
   </section>
+
+  <div class="forms_section" id="form_section" style="display: none">
+    <form action="" class="contact" id="contact_form" style="display: none">
+      <div class="form_title">
+        <h2>Contact Form</h2>
+        <i class="fa fa-close" onclick=setFormStatus()></i>
+      </div>
+      <center>
+        Fill and submit this form so our experts can contact you
+      </center>
+      <fieldset>
+        <legend>Full Name</legend>
+        <input type="text" required placeholder="Your Full Name">
+      </fieldset>
+      <fieldset>
+        <legend>Email</legend>
+        <input type="text" required placeholder="example@email.com">
+      </fieldset>
+      <fieldset>
+        <legend>Contact Number</legend>
+        <input type="text" required placeholder="+91 9999999999">
+      </fieldset>
+      <button>continue</button>
+      <center>
+        By continuing, I agree to PortWala’s <a href="">Terms of Use</a> & <a href="">Privacy Policy</a>
+      </center>
+    </form>
+  </div>
+
 
     <footer class="footer">
         <div class="social">
@@ -290,4 +320,6 @@
       </footer>
 </body>
 <script src="./js/navbar.js"></script>
+<script src="./js/formControl.js"></script>
+
 </html>

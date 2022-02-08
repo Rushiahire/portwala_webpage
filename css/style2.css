@@ -123,7 +123,7 @@
     font-size: 1.3rem;
 }
 
-#section_2 a {
+#section_2 button {
     text-decoration: none;
     background-color: cornflowerblue;
     border: none;
@@ -154,7 +154,7 @@
         font-size: 1.3rem;
     }
 
-    #section_2 a {
+    #section_2 button {
         padding: 2% ;
         width: 60%;
     }
@@ -166,7 +166,7 @@
         width: 95%;
     }
 
-    #section_2 a {
+    #section_2 button {
         width: 80%;
     }
 }
@@ -187,14 +187,14 @@
         font-size: 1.2rem;
     }
 
-    #section_2 a {
+    #section_2 button {
         width: 65%;
         padding: 1%;
     }
 }
 
 @media screen and (max-width:400px) {
-    #section_2 a {
+    #section_2 button {
         width: 80%;
     }
 }
@@ -246,7 +246,7 @@
     font-size: 1rem;
 }
 
-#section_3 a ,#section_4 a {
+#section_3 button ,#section_4 button {
     text-decoration: none;
     text-align: center;
     background-color: cornflowerblue;
@@ -281,7 +281,7 @@
         margin: 10% auto;
     }
 
-    #section_3 a {
+    #section_3 button {
         width: 80%;
     }    
 }

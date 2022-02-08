@@ -137,13 +137,13 @@
     margin: 3% 0;
 }
 
-#section_2 a {
+#section_2 button {
     text-decoration: none;
     text-align: center;
     background-color: rgb(72, 130, 236);
     border: none;
     color: whitesmoke;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     font-size: 1.5rem;
     padding: 1% 2%;
@@ -167,7 +167,7 @@
         margin: 10% auto;
     }
 
-    #section_2 a {
+    #section_2 button {
         width: 80%;
     }    
 }
@@ -216,13 +216,13 @@
     margin: 3% 0;
 }
 
-#section_4 a , #section_6 a{
+#section_4 button , #section_6 button {
     text-decoration: none;
     text-align: center;
     background-color: rgb(64, 126, 240);
     border: none;
     color: whitesmoke;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     font-size: 1.5rem;
     padding: 1% 2%;
@@ -251,7 +251,7 @@
         margin: 10% auto;
     }
 
-    #section_4 a ,#section_6 a{
+    #section_4 button ,#section_6 button {
         width: 80%;
     }    
 }

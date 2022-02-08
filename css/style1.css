@@ -116,7 +116,7 @@
     font-size: 1rem;
 }
 
-#section_3 a ,#section_4 a {
+#section_3 button ,#section_4 button {
     text-decoration: none;
     text-align: center;
     background-color: cornflowerblue;
@@ -147,7 +147,7 @@
         margin: 10% auto;
     }
 
-    #section_3 a {
+    #section_3 button {
         width: 80%;
     }    
 }
@@ -182,7 +182,7 @@
     margin: 4% 0;
 }
 
-#section_4 a {
+#section_4 button {
     background-color: rgb(46, 117, 248);
     width: 50%;   
 }
@@ -193,7 +193,7 @@
         height: auto;
     }
 
-    #section_4 a {
+    #section_4 button {
         width: 75%;
         
     }
@@ -205,7 +205,7 @@
         width: 80%;
     }
 
-    #section_4 a {
+    #section_4 button {
         width: 65%;
     }
 
@@ -232,7 +232,7 @@
         font-size: 1rem;
     }
 
-    #section_4 a {
+    #section_4 button {
         font-size: 1.4rem;
     }
 }
