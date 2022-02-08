@@ -207,7 +207,6 @@
 
 #section_3_div1 , #section_3_div3 {
     background:linear-gradient(to right ,#a7def8,#f1f6f8);
-    /* box-shadow: 10px 10px 10px gray; */
     border-radius: 15px;
 }
 
@@ -269,6 +268,10 @@
     #section_3 div {
         grid-template-columns: 95%;
         text-align: center;
+    }
+
+    #section_3_div1 , #section_3_div3 {
+        background:linear-gradient(to bottom ,#a7def8,#f1f6f8);
     }
 }
 

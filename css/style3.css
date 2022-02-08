@@ -172,6 +172,18 @@
         grid-template-columns: 95%;
         text-align: center;
     }
+
+    #section_3_div1 , #section_3_div3 {
+        background:linear-gradient(to bottom ,#a7def8,#f1f6f8);
+    }
+
+    #section_3_div3 {
+        background:linear-gradient(to top ,#a7def8,#f1f6f8);
+    }
+
+    #section_3_div2 {
+        background:linear-gradient(to bottom ,#a7def8,rgba(255, 255, 255, 0.021));
+    }
 }
 
 @media screen and (max-width: 500px) {

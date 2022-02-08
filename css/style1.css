@@ -41,6 +41,7 @@
 }
 
 #container_1 button {
+    border: none;
     width: 40%;
     box-shadow: 5px 5px 4px gray;
     background-color: #d0eefc;
