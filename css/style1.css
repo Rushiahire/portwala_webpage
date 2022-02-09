@@ -101,7 +101,7 @@
 }
 
 #section_3 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #section_3 p {
@@ -127,6 +127,7 @@
     font-size: 1.5rem;
     padding: 1% 2%;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 #section_3 img {

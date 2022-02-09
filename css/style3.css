@@ -160,6 +160,7 @@
     font-size: 1.5rem;
     padding: 1% 2%;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 #section_3 img {

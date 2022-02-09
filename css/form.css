@@ -30,8 +30,9 @@
   
   .contact{
     width: 50%;
-    height: 50%;
+    height: 70%;
     margin:auto;
+    /* padding-bottom: 15% ; */
     background: linear-gradient(to top,#b2dfdbe3,#B2EBF2e3,#E1F5FEe3);
     border-radius: 15px;
     box-shadow: -1px -1px 10px 5px #c9d1d48f;
@@ -82,7 +83,7 @@
   @media screen and (max-width: 1000px) {
     .contact{
       width: 70%;
-      height: 50%;
+      height: 60%;
     }
   
     .contact fieldset{
@@ -93,10 +94,16 @@
   @media screen and (max-width: 650px) {
     .contact{
         width: 80%;
-        height: 50%;
+        height: 60%;
       }
     
       .contact fieldset{
         width: 80%;
-        height: 10%;
+        height: 13%;
       }}
+
+  @media screen and (max-width:470px) {
+    .contact {
+      height:70%;
+    }
+  }
