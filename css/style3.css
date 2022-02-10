@@ -95,6 +95,111 @@
     }
 }
 
+/* section 2 */
+
+#section_2 {
+    background:linear-gradient(to left  ,#5cc9fc,#e9ebec);
+}
+
+#section_2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    width: 65%;
+    margin: 2% auto;
+}
+
+#section_2 h1 {
+    font-size: 3.5rem;
+}
+
+#section_2 p {
+    margin: 4% 0;
+    font-size: 1.3rem;
+}
+
+
+
+#section_2 button {
+    text-decoration: none;
+    background-color: cornflowerblue;
+    border: none;
+    color: whitesmoke;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 1% 2%;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:850px) {
+    #section_2 div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #section_2 div {
+        padding: 40% 0;
+    }
+
+    #section_2 h1 {
+        font-size: 2.5rem;
+    }
+
+    #section_2 p {
+        font-size: 1.3rem;
+    }
+
+    #section_2 button {
+        padding: 2% ;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    #section_2 div {
+        width: 95%;
+    }
+
+    #section_2 button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    #section_2 div {
+        width: 98%;
+        /* margin: 0 1%; */
+        padding: 0;
+    }
+
+    #section_2 h1 {
+        font-size: 2rem;
+    }
+
+    #section_2 p {
+        font-size: 1.2rem;
+    }
+
+    #section_2 button {
+        width: 65%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #section_2 button {
+        width: 80%;
+    }
+}
+
+
 /* section 3 */
 
 #section_3_div1 , #section_3_div3 {
@@ -174,7 +279,7 @@
     padding: 1% 0;
 }
 
-#section_3 button span:after  {
+#section_3 button span:after , .part_7 button span:after{
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -183,22 +288,22 @@
     transition: 0.5s;
   }
 
-  #section_3 button:hover span{
+  #section_3 button:hover span , .part_7 button:hover span{
     padding-right: 25px;
   }
 
-  #section_3 button span{
+  #section_3 button span , .part_7 button span{
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
 
-  #section_3 button:hover span:after{
+  #section_3 button:hover span:after , .part_7 button:hover span:after{
     right: 0;
     opacity: 1;
   }
 
-  #section_3 button:hover i{
+  #section_3 button:hover i , .part_7 button:hover i {
       display: none;
   }
 
@@ -209,7 +314,7 @@
 }
 
 @media screen and (max-width:900px) {
-    #section_3 button {
+    #section_3 button  {
         width: 95%;
         font-size: 1.3rem;
         padding: 3% 0;
@@ -234,7 +339,7 @@
         background:linear-gradient(to bottom ,#a7def8,rgba(255, 255, 255, 0.021));
     }
 
-    #section_3 button {
+    #section_3 button  {
         width: 90%;
         font-size: 1.3rem;
     }
@@ -246,5 +351,81 @@
         width: 97%;
         font-size: 1rem;
         padding: 2% 0;
+    }   
+}
+
+/* part_7 */
+
+.part_7 {
+    text-align: center;
+    background: url(../images/wave8.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3rem;
+  }  
+
+.part_7 button {
+  width: 30%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #bbdefb;
+  color: #00695c;
+  cursor: pointer;
+}
+
+.part_7 h1 {
+  font-size: 3rem;
+  color: #0d47a1;
+}
+
+.part_7 p,
+.part_7 button {
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .part_7 button {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .part_7 h1 {
+    font-size: 2rem;
+  }
+
+  .part_7 p,
+  .part_7 button {
+    font-size: 1rem;
+  }
+
+  .part_7 {
+    padding: 0;
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .part_7 button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:300px) {
+    .part_7 button {
+        width: 70%;
     }
+ }
+
+.logistic {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
 }
