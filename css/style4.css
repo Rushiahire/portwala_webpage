@@ -151,6 +151,8 @@
     cursor: pointer;
 }
 
+/* section_2 button css added at section_4 , section_6 */
+
 @media screen and (max-width:700px) {
     #section_2 {
         grid-template-columns: 100%;
@@ -168,9 +170,7 @@
         margin: 10% auto;
     }
 
-    #section_2 button {
-        width: 80%;
-    }    
+        
 }
 
 /* section 4 */
@@ -232,6 +232,41 @@
 
 }
 
+
+#section_3 button {
+    width: 80%;
+    padding: 1% 0;
+}
+
+#section_2 button span:after ,#section_4 button span:after ,#section_6 button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #section_2 button:hover span , #section_4 button:hover span , #section_6 button:hover span{
+    padding-right: 25px;
+  }
+
+  #section_2 button span , #section_4 button span , #section_6 button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  #section_2 button:hover span:after , #section_4 button:hover span:after , #section_6 button:hover span:after{
+    right: 0;
+    opacity: 1;
+  }
+
+  #section_2 button:hover i , #section_4 button:hover i , #section_6 button:hover i{
+      display: none;
+  }
+
+
 @media screen and (max-width:700px) {
     #section_4 , #section_6 {
         grid-template-columns: 100%;
@@ -246,6 +281,11 @@
     #section_4 img ,#section_6 img {
         margin: 7% auto;
     }
+
+    #section_2 button , #section_4 button , #section_6 button {
+        width: 90%;
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -254,7 +294,9 @@
         margin: 10% auto;
     }
 
-    #section_4 button ,#section_6 button {
-        width: 80%;
-    }    
+    #section_2 button ,#section_4 button ,#section_6 button {
+        width: 97%;
+        font-size: 1rem;
+        padding: 2% 0;
+    }
 }

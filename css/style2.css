@@ -269,7 +269,6 @@
     cursor: pointer;
 }
 
-
 #section_3 button {
     width: 80%;
     padding: 1% 0;
@@ -308,6 +307,20 @@
     margin: auto;    
 }
 
+@media screen and (max-width:900px) {
+    
+    #section_2 button {
+        width: 70%;
+    }
+
+    #section_3 button {
+        width: 98%;
+        font-size: 1.3rem;
+        padding: 3% 0;
+    }    
+}
+
+
 @media screen and (max-width:700px) {
     #section_3 div {
         grid-template-columns: 95%;
@@ -325,6 +338,7 @@
     #section_3 button {
         width: 90%;
         font-size: 1.3rem;
+        padding: 2% 0;
     }
 }
 
@@ -342,7 +356,7 @@
 
     #section_3 button {
         width: 97%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 2% 0;
     }    
 }
