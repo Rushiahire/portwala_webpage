@@ -274,7 +274,7 @@
     padding: 1% 0;
 }
 
-#section_3 button span:after,#section_2 button span:after  {
+#section_3 button span:after,#section_2 button span:after ,.part_7 button span:after  {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -283,22 +283,22 @@
     transition: 0.5s;
   }
 
-  #section_3 button:hover span,#section_2 button:hover span {
+  #section_3 button:hover span,#section_2 button:hover span ,.part_7 button:hover span {
     padding-right: 25px;
   }
 
-  #section_3 button span,#section_2 button span {
+  #section_3 button span,#section_2 button span , .part_7 button span {
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
 
-  #section_3 button:hover span:after,#section_2 button:hover span:after {
+  #section_3 button:hover span:after,#section_2 button:hover span:after , .part_7 button:hover span:after {
     right: 0;
     opacity: 1;
   }
 
-  #section_3 button:hover i,#section_2 button:hover i {
+  #section_3 button:hover i,#section_2 button:hover i , .part_7 button:hover i {
       display: none;
   }
 
@@ -318,6 +318,7 @@
         font-size: 1.3rem;
         padding: 3% 0;
     }    
+
 }
 
 
@@ -335,11 +336,12 @@
         width: 60%;
     }
 
-    #section_3 button {
+    #section_3 button  {
         width: 90%;
         font-size: 1.3rem;
         padding: 2% 0;
     }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -354,9 +356,85 @@
         padding: 2% 0;
     }
 
-    #section_3 button {
+    #section_3 button ,.part_7 button{
         width: 97%;
         font-size: 1rem;
         padding: 2% 0;
     }    
+}
+
+/* part_7 */
+
+.part_7 {
+    text-align: center;
+    background: url(../images/wave8.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3rem;
+  }  
+
+.part_7 button {
+  width: 30%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #bbdefb;
+  color: #00695c;
+  cursor: pointer;
+}
+
+.part_7 h1 {
+  font-size: 3rem;
+  color: #0d47a1;
+}
+
+.part_7 p,
+.part_7 button {
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .part_7 button {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .part_7 h1 {
+    font-size: 2rem;
+  }
+
+  .part_7 p,
+  .part_7 button {
+    font-size: 1rem;
+  }
+
+  .part_7 {
+    padding: 0;
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .part_7 button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:300px) {
+    .part_7 button {
+        width: 70%;
+    }
+ }
+
+.logistic {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
 }
