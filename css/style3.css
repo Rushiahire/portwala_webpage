@@ -145,6 +145,12 @@
     border-radius: 8%;
 }
 
+#section_3_div2 a {
+    text-decoration: none;
+    color: rgb(83, 83, 253);
+    font-weight: bold;
+}
+
 #section_3_div2 i {
     font-size: 1rem;
 }
