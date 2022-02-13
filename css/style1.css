@@ -357,10 +357,14 @@
 @media screen and (max-width: 1000px) {
   .part_7 button {
     width: 60%;
-  }
 }
 
 @media screen and (max-width: 650px) {
+/*   
+  .part_7 {
+    padding: 0 10rem;
+  } */
+  
   .part_7 h1 {
     font-size: 2rem;
   }
@@ -371,12 +375,16 @@
   }
 
   .part_7 {
-    padding: 0;
-    padding-top: 6rem;
+    padding: 5rem 1rem 2rem 1rem;
+    /* padding-top: 6rem; */
   }
 }
 
 @media screen and (max-width: 500px) {
+  .part_7 {
+    padding: 0 1rem;
+  }
+
   .part_7 button {
     width: 50%;
   }

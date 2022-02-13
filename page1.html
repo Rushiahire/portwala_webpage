@@ -15,66 +15,96 @@
     <title>page1</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-          <div class="navbar_top">
-            <span id="hamburger" onclick="toggleNavbar()"> &#9776; </span>
+  <header>
+    <div class="navbar" id="navbar">
+        <div class="navbar_logo">
+            <span id="hamburger" onclick="toggleNavbar()">
+                &#9776;
+            </span>
             <a href="">
-              <h1>PortWala</h1>
+                <h1>PortWala</h1>
             </a>
-            <button>Login/Signup</button>
-          </div>
-          <div class="navbar_bottom" id="navbar_bottom">
+        </div>
+        <div class="navbar_links" id="navbar_links">
             <div class="dropdown">
-              <span class="dropdown_button" onclick="toggleMenu(1)">
-                Products &nbsp; <i class="fa fa-angle-down"></i>
-              </span>
-              <ul class="dropdown_content" id="menu_1">
-                <li>
-                  <a href=""> Freight Rates </a>
-                </li>
-                <li>
-                  <a href=""> Shipping Containers </a>
-                </li>
-                <li>
-                  <a href=""> Air Shipments </a>
-                </li>
-                <li>
-                  <a href=""> Track Containers </a>
-                </li>
-              </ul>
+                <span class="dropdown_button" onclick="toggleMenu(1)">
+                    Products &nbsp;
+                    <i class="fa fa-angle-down"></i>
+                </span>
+                <ul class="dropdown_content" id="menu_1">
+                    <li>
+                        <a href="">
+                            Freight Rates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Shipping Containers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Air Shipments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Track Containers
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="dropdown">
-              <span class="dropdown_button" onclick="toggleMenu(2)">
-                Services &nbsp; <i class="fa fa-angle-down"></i>
-              </span>
-              <ul class="dropdown_content" id="menu_2">
-                <li>
-                  <a href=""> FCL Freight </a>
-                </li>
-                <li>
-                  <a href=""> LCL Freight </a>
-                </li>
-                <li>
-                  <a href=""> Air Cargo </a>
-                </li>
-                <li>
-                  <a href=""> Trucking </a>
-                </li>
-                <li>
-                  <a href=""> Haulage </a>
-                </li>
-                <li>
-                  <a href=""> Customs Clearance </a>
-                </li>
-              </ul>
+                <span class="dropdown_button" onclick="toggleMenu(2)">
+                    Services &nbsp;
+                    <i class="fa fa-angle-down"></i>
+                </span>
+                <ul class="dropdown_content" id="menu_2">
+                    <li>
+                        <a href="">
+                            FCL Freight
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            LCL Freight
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Air Cargo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Trucking
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Haulage
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Customs Clearance
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <a href=""> Partner Program </a>
-            <a href=""> Logistics </a>
-          </div>
-        </nav>
-      </header>
-      <div id="overlay" onclick=toggleNavbar()></div>
+            <a href="">
+                Partner Program
+            </a>
+            <a href="">
+                Logistics
+            </a>
+            <a href="">Login</a>
+            <a href="">Signup</a>
+        </div>
+    </div>
+    </nav>
+</header>
+      <div id="overlay" class="overlay" onclick=toggleNavbar()></div>
     <main>
         <section id="section_1">
             <div id="container_1">
@@ -169,34 +199,36 @@
         <img src="./images/logistics3.svg" alt="logistics" class="logistic" />
     </main>
     
-    <div class="forms_section" id="form_section" style="display: none">
-      <form action="" class="contact" id="contact_form" style="display: none">
-        <div class="form_title">
-          <h2>Contact Form</h2>
-          <i class="fa fa-close" onclick=setFormStatus()></i>
-        </div>
-        <center>
-          Fill and submit this form so our experts can contact you
-        </center>
-        <fieldset>
-          <legend>Full Name</legend>
-          <input type="text" required placeholder="Your Full Name">
-        </fieldset>
-        <fieldset>
-          <legend>Email</legend>
-          <input type="text" required placeholder="example@email.com">
-        </fieldset>
-        <fieldset>
-          <legend>Contact Number</legend>
-          <input type="text" required placeholder="+91 9999999999">
-        </fieldset>
-        <button>continue</button>
-        <center>
-          By continuing, I agree to PortWala’s <a href="">Terms of Use</a> & <a href="">Privacy Policy</a>
-        </center>
+    <div class="forms_section" id="form_section">
+      <form action="" class="contact" id="contact_form">
+          <div class="form_title">
+              <h2>Contact Form</h2>
+              <i class="fa fa-close" onclick="setFormStatus()"></i>
+          </div>
+          <center>
+              Fill and submit this form so our experts can contact you
+          </center>
+          <fieldset>
+              <legend>Full Name</legend>
+              <input type="text" required placeholder="Your Full Name" />
+          </fieldset>
+          <fieldset>
+              <legend>Email</legend>
+              <input type="text" required placeholder="example@email.com" />
+          </fieldset>
+          <fieldset>
+              <legend>Contact</legend>
+              <input type="text" required placeholder="+91 9999999999" />
+          </fieldset>
+          <button>continue</button>
+          <center>
+              By continuing, I agree to PortWala’s
+              <a href="">Terms of Use</a>
+              &
+              <a href="">Privacy Policy</a>
+          </center>
       </form>
-      </div>
-
+  </div>
     <footer class="footer">
         <div class="social">
           <a href="">
