@@ -353,6 +353,12 @@
   margin: 1rem auto;
 }
 
+.logistic {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
 
 @media screen and (max-width: 1000px) {
   .part_7 button {
@@ -396,11 +402,6 @@
     }
  }
 
-.logistic {
-  max-height: 100%;
-  max-width: 100%;
-  display: block;
-  margin: 1rem auto;
-}
+
 
 
